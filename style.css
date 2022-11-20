@@ -1,0 +1,123 @@
+body h1{
+    src: url("css/gotham-light") format("opentype");
+    font-family: 'gotham-light', sans-serif;
+}
+.navbar-nav > li{
+    padding-left:30px;
+    padding-right:30px;
+    font-family: 'gotham-light';
+    font-weight: bolder;
+    font-size: large;
+    transition: transform .2s; /* Animation */
+}
+.navbar-nav > li:hover{
+    background-color: #ffae42;
+    border-radius: 30px; 
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+}
+.navbar{
+    background-color: white;
+    position: fixed; 
+}
+.svg{
+    cursor: url(https://www.xyma.in/fimages/ports.svg), auto;
+}
+.cursor {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+  }
+  .cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: black;
+    opacity: .3;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+  }
+  #loader{
+    position:fixed;
+    width:100%;
+    height: 100vh;
+    z-index: 1;
+    /* overflow: visible; */
+    background: url('/images/editor-1s-47px.gif') no-repeat center center;
+  }
+  .fnt{
+    font-family: 'gotham-light';
+    font-weight:bolder;
+    color: rgb(77, 67, 67);
+  }
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid orange; /*The typwriter cursor */
+    white-space: pre-line; 
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0px; /*Adjust as needed */
+    font-size:33px; 
+    animation: 
+      typing 3s steps(40, end),
+      blink-caret .75s steps(100, end) infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    100% { border-color: orange; }
+  }
+  .bgg{
+    background-image: linear-gradient(to right, rgb(83, 61, 61), grey);
+  }
+  .gradient-underline {
+    padding-bottom: 15px;
+    position: relative;
+    text-decoration: none;
+}
+
+.gradient-underline::after {
+    background: #f00;
+    background: linear-gradient(to right, transparent 0%, #ffae42 50%, transparent 100%);  
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+ }
+ #outer
+{
+    width:100%;
+    text-align: center;
+}
+.inner
+{
+    display: inline-block;
+}
+div button{
+  display:inline-block;
+}  
+.inner button:hover{
+  background-color: #ffae42;
+    border-radius: 30px; 
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
